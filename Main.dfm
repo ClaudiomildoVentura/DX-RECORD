@@ -3,7 +3,7 @@ object frmMain: TfrmMain
   Top = 0
   BorderStyle = bsDialog
   ClientHeight = 281
-  ClientWidth = 402
+  ClientWidth = 214
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -14,4 +14,46 @@ object frmMain: TfrmMain
   Position = poScreenCenter
   PixelsPerInch = 96
   TextHeight = 13
+  object Label1: TLabel
+    Left = 99
+    Top = 24
+    Width = 17
+    Height = 30
+    Caption = 'X'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = 30
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 240
+    Width = 214
+    Height = 41
+    Align = alBottom
+    TabOrder = 0
+    ExplicitWidth = 402
+    object btnOk: TBitBtn
+      Left = 64
+      Top = 8
+      Width = 87
+      Height = 25
+      Hint = 'Ok!!!'
+      Kind = bkOK
+      NumGlyphs = 2
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 0
+      OnClick = btnOkClick
+    end
+  end
+  object edtTxt: TEdit
+    Left = 48
+    Top = 64
+    Width = 121
+    Height = 21
+    TabOrder = 1
+  end
 end
