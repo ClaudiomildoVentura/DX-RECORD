@@ -27,16 +27,16 @@ implementation
 {$R *.dfm}
 
 procedure TfrmMain.btnOkClick(Sender: TObject);
-var Arq: TextFile; // Declaração da variável do tipo arquivo texto
+var Arq: TextFile; // DeclaraÃ§Ã£o da variÃ¡vel do tipo arquivo texto
   I,N: Integer;
 begin
   try
-    // 1° Associa a variável "Arq" ao arquivo externo "x.txt"  na unidade de disco "D"
+    // 1Â° Associa a variÃ¡vel "Arq" ao arquivo externo "x.txt"  na unidade de disco "D"
     AssignFile(Arq, 'd:\\x.txt');
 
-    Rewrite(Arq); // 2° Cria o arquivo de texto "x.txt" na unidade de disco "D"
+    Rewrite(Arq); // 2Â° Cria o arquivo de texto "x.txt" na unidade de disco "D"
 
-    N := StrToInt(edtTxt.Text); // Atribuido o valor do edit a variável "N"
+    N := StrToInt(edtTxt.Text); // Atribuido o valor do edit a variÃ¡vel "N"
 
     Writeln(Arq, '+---Resultado--+'); // [ 8 ] Grava uma linha no arquivo
     for I := 1 to 10 do
@@ -53,4 +53,21 @@ begin
   end;
 end;
 
+{
+
+Resultado esperado
+
++---Resultado--+ 
+|  1 X 7 =  7  |
+|  2 X 7 = 14  |
+|  3 X 7 = 21  |
+|  4 X 7 = 28  |
+|  5 X 7 = 35  |
+|  6 X 7 = 42  |
+|  7 X 7 = 49  |
+|  8 X 7 = 56  |
+|  9 X 7 = 63  |
+| 10 X 7 = 70  |
++--------------+
+}
 end.
