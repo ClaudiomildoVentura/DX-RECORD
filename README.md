@@ -3,7 +3,8 @@ Creating and Saving Txt Data with Delphi
 
 Result
 
-+---Resultado--+
++---Resultado--+ 
+----------------
 |  1 X 7 =  7  |
 ----------------
 |  2 X 7 = 14  |
